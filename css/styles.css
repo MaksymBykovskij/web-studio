@@ -201,11 +201,14 @@ a {
 }
 
 .hero {    
-    top: 80px;
+    
     text-align: center;
     background: tomato; 
+    margin-bottom: 95px;
 }
+
 .hero-title {
+    text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 30px;
     font-weight: 900;
@@ -235,24 +238,37 @@ a {
     display: flex;
     margin: 0;
     padding: 0;
+   
+    color: var(--primary-text-color);
 }
-.feature-list li {
-    outline: 1px solid red;
+.feature-list li:last-child {
+    margin-right: 0;
 }
-.feature {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 10px;
+.feature-card {
+    margin-right: 30px;
+}
+
+.feature-title {
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.15;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    color: var(--primary-text-color);
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 .feature-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.03em;
     margin: 0;
     padding: 0;
     color: var(--contact-color);
-    line-height: 2;
 }
 
 /* ********** Чим ми займаемось ********** */
@@ -265,6 +281,12 @@ a {
     margin-top: 0px;
     margin-bottom: 50px;
     padding-top: 95px;
+}
+.list-picture {
+    display: flex;
+}
+.list-picture .picture+ .picture {
+    margin-left: 30px;
 }
 
 /* Наша команда */
